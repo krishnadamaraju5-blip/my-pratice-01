@@ -3,7 +3,7 @@
 START_TIME=$(date +"%d-%m-%Y %H:%M:%S")
 
 echo " Start time of the script: $START_TIME"
-slepp 10&
+sleep 10&
 
 wait $!
 
