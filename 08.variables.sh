@@ -18,4 +18,6 @@ TOTAL_TIME=$(date +"%d-%m-%Y %H:%M:%S")-$(date +"%d-%m-%Y %H:%M:%S")
 echo "Total Time taken by the script: $TOTAL_TIME"
 
 echo "The directory of the script: $PWD"
+echo "who is running the script: $USER"
+
 
