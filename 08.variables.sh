@@ -23,3 +23,5 @@ echo "who is running the script: $USER"
 echo "Previous command exit status: $?"
 
 echo "realpath/full path: $(realpath $0)"
+
+echo "Directories where the shell searches for executable commands: $PATH"
