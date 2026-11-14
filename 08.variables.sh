@@ -20,4 +20,4 @@ echo "Total Time taken by the script: $TOTAL_TIME"
 echo "The directory of the script: $PWD"
 echo "who is running the script: $USER"
 
-
+echo "Previous command exit status: $?"
