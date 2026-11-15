@@ -1,8 +1,8 @@
 #!/bin/bash
-# marks=$1
+ marks=$1
 
-echo "Please enter your marks: "
-read marks
+echo "Please enter your marks:$1"
+# read marks
 
 if [ $marks -lt 33 ]; then
     echo "Third Class"
