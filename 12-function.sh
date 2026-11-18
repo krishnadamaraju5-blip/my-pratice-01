@@ -17,9 +17,9 @@ validate(){
 }
 
 dnf install nginx -y
-validate $1 "Nginx installation is"
+validate $? "Nginx installation is"
 
 dnf install mysql -y
-validate $1 "Mysql client installation is"
+validate $? "Mysql client installation is"
 
 echo "THE END"
