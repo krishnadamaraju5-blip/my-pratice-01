@@ -2,7 +2,7 @@
 
 user_id=$(id -u)
 logs_folder="/var/log/shell-scripting"
-logs_file="${logs_folder}/${0}.log
+logs_file="${logs_folder}/${0}.log"
 
 if [ user_id -ne 0 ]; then
     echo "Please run the script with administrative privileges"
@@ -23,5 +23,6 @@ for package in $@
 do
     echo "Going to install: $package"
     dnf install $package -y &>> $logs_file
-    valiate $? "Installing ${package}"
+    validate $? "Installing ${package}"
 done
+
