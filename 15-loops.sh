@@ -4,7 +4,7 @@ user_id=$(id -u)
 logs_folder="/var/log/shell-scripting"
 logs_file="${logs_folder}/${0}.log"
 
-if [ user_id -ne 0 ]; then
+if [ $user_id -ne 0 ]; then
     echo "Please run the script with administrative privileges"
     exit 1
 fi
